@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern AOS Animations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-solarizedlight.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</head>
+<body>
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="intro-content">
+            <h1>Welcome to Modern Animations</h1>
+            <p>Explore beautiful animations with AOS, developed by AlphasT101, in order to participate in the Hackclub event by Highseas.</p>
+            <button onclick="scrollToContent()">Start Exploring</button>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content" class="content">
+        <button class="toggle-btn" onclick="toggleMode()">Switch Mode</button>
+        <div class="container">
+
+
+            <div class="card-title">
+                <hr class="styled-hr">
+                <h2>Flip Animations</h2>
+                <hr class="styled-hr">
+            </div>
+            <div class="divvv">
+                <div class="card right" data-aos="flip-left">
+                    <h3>Flip Left Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="flip-left"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="flip-right">
+                    <h3>Flip Right Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="flip-right"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card right" data-aos="flip-up">
+                    <h3>Flip Up Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="flip-up"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="flip-down">
+                    <h3>Flip Down Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="flip-down"&gt;&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+
+            <div class="card-title">
+                <hr class="styled-hr">
+                <h2>Fade Animations</h2>
+                <hr class="styled-hr">
+            </div>
+            <div class="divvv">
+                <div class="card right" data-aos="fade">
+                    <h3>Fade Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="fade-right">
+                    <h3>Fade Right Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade-right"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card right" data-aos="fade-left">
+                    <h3>Fade Left Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade-left"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="fade-up-right">
+                    <h3>Flip Right Up Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade-right-up"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card right" data-aos="fade-down-right">
+                    <h3>Flip Right Down Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade-right-down"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="fade-up-left">
+                    <h3>Flip Left Up Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade-left-up"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card right" data-aos="fade-down-left">
+                    <h3>Flip left Down Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade-left-down"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="fade-up">
+                    <h3>Fade Up Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade-up"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card right" data-aos="fade-down">
+                    <h3>Fade Down Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade-down"&gt;&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+
+
+            <div class="card-title">
+                <hr class="styled-hr">
+                <h2>Zoom Animations</h2>
+                <hr class="styled-hr">
+            </div>
+            <div class="divvv">
+                <div class="card right" data-aos="zoom-in">
+                    <h3>Zoom In Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="zoom-in"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="zoom-in-up">
+                    <h3>Zoom In Up Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="zoom-in-up"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card right" data-aos="zoom-in-down">
+                    <h3>Zoom In Down Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="zoom-in-down"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="zoom-in-left">
+                    <h3>Zoom In Left Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="zoom-in-left"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card right" data-aos="zoom-in-right">
+                    <h3>Zoom In Right Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="zoom-in-right"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="zoom-out">
+                    <h3>Zoom Out Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="zoom-out"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card right" data-aos="zoom-out-up">
+                    <h3>Zoom Out Up Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="zoom-out-up"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="zoom-out-down">
+                    <h3>Zoom Out Down Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="zoom-out-down"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card right" data-aos="zoom-out-left">
+                    <h3>Zoom Out Left Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="zoom-out-left"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="zoom-out-right">
+                    <h3>Zoom Out Right Animation</h3>
+                    <pre><code class="language-html">&lt;div data-aos="zoom-out-right"&gt;&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+
+
+            <div class="card-title">
+                <hr class="styled-hr">
+                <h2>Animations With Durations</h2>
+                <hr class="styled-hr">
+            </div>
+            <div class="divvv">
+                <div class="card right" data-aos="flip-left" data-aos-duration="3000">
+                    <h3>Flip Left Animation With 3s Duration</h3>
+                    <pre><code class="language-html">&lt;div data-aos="flip-left" data-aos-duration="3000"&gt;&lt;/div&gt;
+                    </code></pre>
+                </div>
+                <div class="card left" data-aos="fade" data-aos-duration="1000">
+                    <h3>Fade Animation With 1s Duration</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade" data-aos-duration="1000"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card right" data-aos="fade-up" data-aos-duration="3000">
+                    <h3>Fade up Animation With 3s Duration</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade-up" data-aos-duration="3000"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="zoom-in" data-aos-duration="2000">
+                    <h3>Zoom In Animation With 2s Duration</h3>
+                    <pre><code class="language-html">&lt;div data-aos="zoom-in" data-aos-duration="2000"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card right" data-aos="zoom-out" data-aos-duration="2000">
+                    <h3>Zoom Out Animation With 2s Duration</h3>
+                    <pre><code class="language-html">&lt;div data-aos="zoom-out" data-aos-duration="2000"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="flip-right" data-aos-duration="3000">
+                    <h3>Flip Right Animation With 3s Duration</h3>
+                    <pre><code class="language-html">&lt;div data-aos="flip-right" data-aos-duration="3000"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card right" data-aos="flip-up" data-aos-duration="1000">
+                    <h3>Flip Up Animation With 1s Duration</h3>
+                    <pre><code class="language-html">&lt;div data-aos="flip-up" data-aos-duration="1000"&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="card left" data-aos="fade-down" data-aos-duration="2000">
+                    <h3>Fade Down Animation With 2s Duration</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade-down" data-aos-duration="2000"&gt;&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+
+
+            <div class="card-title">
+                <hr class="styled-hr">
+                <h2>Animations with Easings</h2>
+                <hr class="styled-hr">
+            </div>
+            <div class="divvv">
+                <div class="card right" data-aos="flip-left" data-aos-easing="ease-in-sine">
+                    <h3>Flip Left Animation With Ease In Sine</h3>
+                    <pre><code class="language-html">&lt;div data-aos="flip-left" data-aos-easing="ease-in-sine"&gt;&lt;/div&gt;
+                    </code></pre>
+                        
+                </div>
+                <div class="card left" data-aos="fade">
+                    <h3>Fade Animation With Linear</h3>
+                    <pre><code class="language-html">&lt;div data-aos="fade" data-aos-easing="linear"&gt;&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function toggleMode() {
+            document.body.classList.toggle('light-mode');
+        }
+
+        function scrollToContent() {
+            document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
